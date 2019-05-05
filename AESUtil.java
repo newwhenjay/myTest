@@ -24,6 +24,7 @@ public class AESUtil {
         //≤‚ ‘
         SecretKey key = keyGen.generateKey();
         String base64Str = byte2Base64(key.getEncoded());
+        //≤‚ ‘2
         return base64Str;
 
     }
