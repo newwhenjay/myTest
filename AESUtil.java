@@ -21,9 +21,11 @@ public class AESUtil {
     public static String genKeyAES() throws Exception{
         KeyGenerator keyGen = KeyGenerator.getInstance("AES");
         keyGen.init(128);
+        //测试
         SecretKey key = keyGen.generateKey();
         String base64Str = byte2Base64(key.getEncoded());
         return base64Str;
+
     }
 
     //将Base64编码后的AES秘钥转换成SecretKey对象
